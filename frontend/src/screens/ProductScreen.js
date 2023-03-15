@@ -7,7 +7,8 @@ import { useLocation } from "react-router-dom";
 const ProductScreen = () => {
     const location = useLocation();
   const path = location.pathname.split("/")[2];
-  // const product = products.find((p) => p._id === path);
+  console.log(location);
+  // const paths = products.find((p) => p._id === path);
   // console.log(product);
   const[product, setProduct] = useState({})
 
@@ -17,7 +18,7 @@ const ProductScreen = () => {
        setProduct(data)
     }
     fetchProduct()
- },[path])
+ },[])
 
 
   return (

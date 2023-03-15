@@ -6,7 +6,9 @@
   "main": "products.js",
   "scripts": {
     "dev": "nodemon server.js",
-    "start": "node server.js"
+    "start": "node server.js",
+    "data:import": "node seeder",
+    "data:destory": "node seeder -d"
   },
   "keywords": [],
   "author": "",
