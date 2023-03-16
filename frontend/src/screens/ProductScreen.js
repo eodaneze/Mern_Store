@@ -18,7 +18,7 @@ const ProductScreen = () => {
        setProduct(data)
     }
     fetchProduct()
- },[])
+ },[path])
 
 
   return (
